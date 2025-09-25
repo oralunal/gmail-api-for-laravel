@@ -1,7 +1,7 @@
 # Gmail API For Laravel
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/oralunal/gmail-api-for-laravel.svg?style=flat-square)](https://packagist.org/packages/oralunal/gmail-api-for-laravel)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/oralunal/gmail-api-for-laravel/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/:vendor_slug/:package_slug/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/oralunal/gmail-api-for-laravel/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/oralunal/gmail-api-for-laravel/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/oralunal/gmail-api-for-laravel.svg?style=flat-square)](https://packagist.org/packages/oralunal/gmail-api-for-laravel)
 
 A Laravel package that allows you to use Gmail API as a mail driver.
