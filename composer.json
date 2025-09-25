@@ -1,0 +1,43 @@
+{
+    "name": "oralunal/gmail-api-for-laravel",
+    "description": "A Laravel package that allows you to use Gmail API as a mail driver",
+    "keywords": [
+        "oralunal",
+        "laravel",
+        "gmail-api-for-laravel"
+    ],
+    "homepage": "https://github.com/oralunal/gmail-api-for-laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Oral Ünal",
+            "email": "oralunal@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "laravel/framework": "^12",
+        "google/apiclient": "^2"
+    },
+    "autoload": {
+        "psr-4": {
+            "OralUnal\\GmailApi\\": "src/"
+        }
+    },
+    "scripts": {
+        "pre-autoload-dump": "Google\\Task\\Composer::cleanup"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "OralUnal\\GmailApi\\ServiceProvider\\GmailApiServiceProvider"
+            ]
+        },
+        "google/apiclient-services": [
+            "Gmail"
+        ]
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
