@@ -4,6 +4,7 @@ namespace OralUnal\GmailApi\ServiceProvider;
 
 use Google\Client;
 use Google\Service\Gmail;
+use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\ServiceProvider;
 use OralUnal\GmailApi\Exceptions\CredentialsJsonFullPathDoesntExist;
@@ -19,6 +20,10 @@ class GmailApiServiceProvider  extends ServiceProvider
         $this->mergeConfigFrom(
             __DIR__.'/../../config/gmail-api.php', 'gmail-api'
         );
+
+        Config::set('mail.mailers.gmail-api', [
+            'transport' => 'gmail-api',
+        ]);
     }
 
     public function boot(): void
